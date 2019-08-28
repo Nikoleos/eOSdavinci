@@ -11,7 +11,18 @@ $ mkdir -p \
 /home/nicolas/e/ccache \
 /home/nicolas/e/local_manifests \
 
-Step 3. Start build
+Step 3. Create manifest .xml file
+
+create an .xml file named roomservice.xml in /home/nicolas/e/local_manifests
+
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="davinci-dev/android_device_xiaomi_davinci" path="device/xiaomi/davinci" remote="github" />
+  <project name="davinci-dev/android_kernel_xiaomi_davinci" path="kernel/xiaomi/davinci" remote="github" />
+  <project name="davinci-dev/android_vendor_xiaomi_davinci" path="vendor/xiaomi/davinci" remote="github" />
+</manifest>
+
+Step 4. Start build
 
 $ sudo docker run \
 -v "/home/nicolas/e/src:/srv/src:delegated" \
