@@ -19,7 +19,7 @@ $ sudo docker run \
 -v "/home/nicolas/e/logs:/srv/logs:delegated" \
 -v "/home/nicolas/e/ccache:/srv/ccache:delegated" \
 -v "/home/nicolas/e/local_manifests:/srv/manifests:delegated" \
--e "BRANCH_NAME=v1-PIE" \
+-e "BRANCH_NAME=lineage-16.0" \
 -e "DEVICE_LIST=davinci" \
 -e "CUSTOM_PACKAGES='MuPDF GmsCore GsfProxy FakeStore com.google.android.maps.jar Mail BlissLauncher BlissIconPack MozillaNlpBackend OpenWeatherMapWeatherProvider AccountManager MagicEarth OpenCamera eDrive Weather Notes Tasks NominatimNlpBackend Light DroidGuard OpenKeychain Message Browser BrowserWebView Apps LibreOfficeViewer'" \
 -e "SIGNATURE_SPOOFING=restricted" \
