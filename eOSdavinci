@@ -9,6 +9,7 @@ $ mkdir -p \
 /home/nicolas/e/zips \
 /home/nicolas/e/logs \
 /home/nicolas/e/ccache \
+/home/nicolas/e/local_manifests \
 
 Step 3. Start build
 
@@ -17,6 +18,7 @@ $ sudo docker run \
 -v "/home/nicolas/e/zips:/srv/zips:delegated" \
 -v "/home/nicolas/e/logs:/srv/logs:delegated" \
 -v "/home/nicolas/e/ccache:/srv/ccache:delegated" \
+-v "/home/nicolas/e/local_manifests:/srv/manifests:delegated" \
 -e "BRANCH_NAME=v1-PIE" \
 -e "DEVICE_LIST=davinci" \
 -e "CUSTOM_PACKAGES='MuPDF GmsCore GsfProxy FakeStore com.google.android.maps.jar Mail BlissLauncher BlissIconPack MozillaNlpBackend OpenWeatherMapWeatherProvider AccountManager MagicEarth OpenCamera eDrive Weather Notes Tasks NominatimNlpBackend Light DroidGuard OpenKeychain Message Browser BrowserWebView Apps LibreOfficeViewer'" \
